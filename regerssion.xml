@@ -4,9 +4,8 @@
 
     <test name="Regression1">
         <classes>
-            <class name="testing.testBase"/>
-            <class name="Testing.logTest"/>
-
+            <class name="Tests.testBase"/>
+            <class name="Tests.logTest"/>
         </classes>
     </test>
 </suite>

@@ -5,6 +5,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -16,8 +17,8 @@ public class testBase {
 
     @BeforeSuite
     public void OpenBrowser(){
-        WebDriverManager.edgedriver().setup();
-        driver = new EdgeDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("http://www.demo.guru99.com/V4/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
